@@ -1,0 +1,59 @@
+.contact {
+  text-align: center;
+  height: calc(100vh - 80px);
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px 0;
+    a {
+      i {
+        font-size: 6rem;
+      }
+    }
+  }
+  &__text {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    line-height: 2em;
+  }
+  &__adores {
+    margin-top: 80px;
+    font-size: 3rem;
+  }
+  &__title {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  &__id {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  .fa-twitter {
+    color: #1da1f2;
+  }
+  .fa-facebook {
+    color: #3c5a99;
+  }
+  .fa-instagram {
+    color: #cf2e92;
+  }
+  a {
+    transition: 0.5s;
+    &:hover {
+      filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.35));
+    }
+    &:active {
+      filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+    }
+  }
+  @include mq(lg) {
+    height: auto;
+    &__flex {
+      flex-direction: column;
+      a {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
