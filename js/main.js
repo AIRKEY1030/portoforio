@@ -29,8 +29,8 @@ $(function() {
       newEL.animate({ opacity: 1 }, 1000);
     });
   }, 1000);
-
   //title
+
   // スマホナビ
   $(".header__button").on("click", function() {
     if ($(this).hasClass("active")) {
