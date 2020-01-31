@@ -1,4 +1,36 @@
 $(function() {
+  //title
+  var $allMsg = $("#title");
+  var $wordList = $("#title")
+    .html()
+    .split("");
+  var $allMs = $("#sub_title");
+  var $wordLis = $("#sub_title")
+    .html()
+    .split("");
+  $("#title").html(""),
+    $.each($wordList, function(idx, elem) {
+      var newEL = $("<span/>")
+        .text(elem)
+        .css({ opacity: 0 });
+      newEL.appendTo($allMsg);
+      newEL.delay(idx * 70);
+      newEL.animate({ opacity: 1 }, 1000);
+    });
+  $("#sub_title").html("<br>");
+  setTimeout(function() {
+    $("#sub_title").html("");
+    $.each($wordLis, function(idx, elem) {
+      var newEL = $("<span/>")
+        .text(elem)
+        .css({ opacity: 0 });
+      newEL.appendTo($allMs);
+      newEL.delay(idx * 70);
+      newEL.animate({ opacity: 1 }, 1000);
+    });
+  }, 1000);
+
+  //title
   // スマホナビ
   $(".header__button").on("click", function() {
     if ($(this).hasClass("active")) {
