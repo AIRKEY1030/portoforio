@@ -49,6 +49,10 @@
   }
   @include mq(lg) {
     height: auto;
+    &__adores {
+      margin-top: 80px;
+      font-size: 2rem;
+    }
     &__flex {
       flex-direction: column;
       a {
