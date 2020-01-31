@@ -88,10 +88,11 @@
     text-align: left;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
-    padding: 25px;
+    padding: 10px;
     background-color: $color-back;
     img {
       width: 270px;
@@ -126,7 +127,7 @@
   &__banner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
     width: 270px;
     img {
       width: calc(95% / 3);
