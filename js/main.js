@@ -8,15 +8,16 @@ $(function() {
   var $wordLis = $("#sub_title")
     .html()
     .split("");
-  $("#title").html(""),
-    $.each($wordList, function(idx, elem) {
-      var newEL = $("<span/>")
-        .text(elem)
-        .css({ opacity: 0 });
-      newEL.appendTo($allMsg);
-      newEL.delay(idx * 70);
-      newEL.animate({ opacity: 1 }, 1000);
-    });
+  $("#title").html("");
+
+  $.each($wordList, function(idx, elem) {
+    var newEL = $("<span/>")
+      .text(elem)
+      .css({ opacity: 0 });
+    newEL.appendTo($allMsg);
+    newEL.delay(idx * 70);
+    newEL.animate({ opacity: 1 }, 1000);
+  });
   $("#sub_title").html("<br>");
   setTimeout(function() {
     $("#sub_title").html("");
@@ -145,13 +146,23 @@ $(function() {
       });
     } else {
       // それ以外
+      $(".works__left article:first").attr("id", "works-top");
+
+      var first_view = $("#works-top").html();
+
+      $(".works__right")
+        .html(first_view)
+        .css("opacity", "1");
+
       $(".works__contents").on("click", function() {
         var list = $(this).html();
+
         $(".works__right").stop(true);
+
         $.when(
           $(".works__right").animate(
             { opacity: 0 },
-            { duration: 200, easing: "swing" }
+            { duration: 400, easing: "swing" }
           )
         ).done(function() {
           $(".works__right")
