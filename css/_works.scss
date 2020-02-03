@@ -1,16 +1,93 @@
 .works {
-  text-align: center;
   height: $wrapper-height;
+  text-align: center;
+
+  @include mq(lg) {
+    padding-bottom: 30px;
+    height: auto;
+    cursor: default;
+    &__left {
+      overflow: visible;
+      width: 100%;
+      height: auto;
+      article:last-of-type {
+        margin-bottom: 100px;
+      }
+      #more_btn,
+      #close_btn {
+        display: block;
+        padding: 15px 0;
+        border: 1px solid #000;
+        font-size: 1.6rem;
+        cursor: pointer;
+      }
+    }
+    &__right {
+      display: none;
+    }
+    &__contents {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      margin-bottom: 100px;
+      padding: 10px;
+      height: auto;
+      img {
+        display: none;
+      }
+      a {
+        display: block;
+        img {
+          display: block;
+          margin: 0 0 15px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      ul {
+        width: 100%;
+        li {
+          a {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.4rem;
+          }
+          &:nth-child(n + 5) {
+            display: block;
+          }
+        }
+      }
+      .works__many {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        padding: 0;
+        width: 100%;
+        a {
+          margin-left: 10px;
+          width: 100%;
+          &:first-of-type {
+            margin-left: 0;
+          }
+          img {
+            margin: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   &__flex {
     display: flex;
-    margin-top: 30px;
     justify-content: space-between;
+    margin-top: 30px;
   }
   &__left {
     overflow: scroll;
-    @include scroll-none;
     width: 465px;
     height: calc(100vh - 80px - 60px - 3rem - 30px);
+
+    @include scroll-none;
     a {
       display: none;
     }
@@ -36,8 +113,8 @@
       display: none;
     }
     a {
-      cursor: zoom-in;
       display: block;
+      cursor: zoom-in;
       img {
         display: block;
         width: 100%;
@@ -45,38 +122,38 @@
     }
 
     ul {
+      margin-top: 20px;
       list-style: none;
       text-align: left;
-      margin-top: 20px;
       li {
         line-height: 1.2em;
         h3 {
-          font-size: 1.8rem;
           margin-bottom: 0px;
+          font-size: 1.8rem;
         }
         a {
-          cursor: pointer;
-          font-size: 1rem;
           margin-top: 0px;
+          font-size: 1rem;
+          cursor: pointer;
         }
         &:nth-child(odd) {
-          font-size: 2rem;
           margin-bottom: 4px;
+          font-size: 2rem;
         }
         &:nth-child(even) {
-          font-size: 1.4rem;
           margin-bottom: 20px;
+          font-size: 1.4rem;
         }
       }
     }
     .works__many {
       display: flex;
       justify-content: space-between;
-      width: 465px;
       margin-left: 0px;
+      width: 465px;
       a {
-        width: auto;
         margin-left: 15px;
+        width: auto;
         &:first-of-type {
           margin-left: 0;
         }
@@ -84,40 +161,40 @@
     }
   }
   &__contents {
-    cursor: pointer;
-    text-align: left;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 200px;
+    justify-content: space-between;
     margin-bottom: 20px;
     padding: 10px;
+    width: 100%;
+    height: 200px;
     background-color: $color-back;
+    text-align: left;
+    cursor: pointer;
     img {
+      margin-left: 10px;
       width: 270px;
       height: 150px;
-      margin-left: 10px;
     }
     ul {
-      list-style: none;
       width: 170px;
+      list-style: none;
       li {
         line-height: 1.2em;
         a {
           display: none;
         }
         h3 {
-          font-size: 2rem;
           margin-bottom: 10px;
+          font-size: 2rem;
         }
         &:nth-child(odd) {
-          font-size: 1.8rem;
           margin-bottom: 4px;
+          font-size: 1.8rem;
         }
         &:nth-child(even) {
-          font-size: 1.2rem;
           margin-bottom: 20px;
+          font-size: 1.2rem;
         }
         &:nth-child(n + 5) {
           display: none;
@@ -142,81 +219,6 @@
     }
     .businessCard {
       width: 40%;
-    }
-  }
-  @include mq(lg) {
-    cursor: default;
-    height: auto;
-    padding-bottom: 30px;
-    &__left {
-      overflow: visible;
-      height: auto;
-      width: 100%;
-      article:last-of-type {
-        margin-bottom: 100px;
-      }
-      #more_btn,
-      #close_btn {
-        display: block;
-        font-size: 1.6rem;
-        padding: 15px 0;
-        border: 1px solid #000;
-        cursor: pointer;
-      }
-    }
-    &__right {
-      display: none;
-    }
-    &__contents {
-      height: auto;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      padding: 10px;
-      margin-bottom: 100px;
-      img {
-        display: none;
-      }
-      a {
-        display: block;
-        img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          margin: 0 0 15px;
-        }
-      }
-      ul {
-        width: 100%;
-        li {
-          a {
-            display: block;
-            margin-top: 10px;
-            font-size: 1.4rem;
-          }
-          &:nth-child(n + 5) {
-            display: block;
-          }
-        }
-      }
-      .works__many {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 15px;
-        padding: 0;
-        a {
-          width: 100%;
-          margin-left: 10px;
-          &:first-of-type {
-            margin-left: 0;
-          }
-          img {
-            margin: 0;
-            width: 100%;
-          }
-        }
-      }
     }
   }
 }
