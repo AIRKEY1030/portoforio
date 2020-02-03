@@ -170,6 +170,7 @@
     &__contents {
       height: auto;
       flex-direction: column-reverse;
+      align-items: flex-start;
       padding: 10px;
       margin-bottom: 100px;
       img {
