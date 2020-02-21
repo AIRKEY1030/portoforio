@@ -174,11 +174,3 @@ $(function() {
   }
   // works
 });
-e999;
-$(function() {
-  /*
-   *title
-   */
-
-  $;
-});

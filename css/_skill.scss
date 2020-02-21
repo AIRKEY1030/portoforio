@@ -1,31 +1,7 @@
 .skill {
+  text-align: center;
   height: $wrapper-height;
   background-color: $color-back;
-  text-align: center;
-
-  @include mq(lg) {
-    padding-bottom: 30px;
-    height: auto;
-    &__flex {
-      flex-direction: column;
-      > div {
-        margin-top: 30px;
-        margin-right: 0;
-        width: auto;
-        &:last-child {
-          margin-top: 50px;
-        }
-        i {
-          padding-top: 30px;
-          width: 150px;
-          height: 150px;
-          border: 3px solid #707070;
-          border-radius: 75px;
-          font-size: 80px;
-        }
-      }
-    }
-  }
   &__flex {
     display: flex;
     justify-content: space-between;
@@ -38,12 +14,12 @@
         margin-right: 0;
       }
       i {
-        padding-top: 35px;
         width: 180px;
         height: 180px;
+        padding-top: 35px;
+        font-size: 100px;
         border: 5px solid #707070;
         border-radius: 90px;
-        font-size: 100px;
       }
       p {
         &:nth-child(2) {
@@ -51,13 +27,36 @@
           font-size: 3rem;
         }
         &:last-child {
-          margin-top: 20px;
           text-align: left;
+          margin-top: 20px;
           font-size: 1.4rem;
           line-height: 1.1em;
           span {
             font-size: 1.2rem;
           }
+        }
+      }
+    }
+  }
+  @include mq(lg) {
+    height: auto;
+    padding-bottom: 30px;
+    &__flex {
+      flex-direction: column;
+      > div {
+        width: auto;
+        margin-right: 0;
+        margin-top: 30px;
+        &:last-child {
+          margin-top: 50px;
+        }
+        i {
+          width: 150px;
+          height: 150px;
+          padding-top: 30px;
+          font-size: 80px;
+          border: 3px solid #707070;
+          border-radius: 75px;
         }
       }
     }
