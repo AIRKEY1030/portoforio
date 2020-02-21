@@ -2,85 +2,85 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mitsuishi's Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/lightbox.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/lightbox.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Mitsuishi's Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/lightbox.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/lightbox.js"></script>
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <a class="header__button" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <nav class="header__wrapper">
-            <ul class="nav wrapper">
-                <li><a href="#top">Top</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- /header -->
+  <!-- header -->
+  <header class="header">
+    <a class="header__button" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <nav class="header__wrapper">
+      <ul class="nav wrapper">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
 
-    <!-- main -->
-    <main>
+  <!-- main -->
+  <main>
+    <div class="scroll__container">
+      <!-- top -->
+      <section id="top" class="scroll__child">
+        <div class="top">
+          <h1 id="title">Mitsuishi Kenta</h1>
+          <p id="sub_title">- Portfolio -</p>
+        </div>
+      </section>
+      <!-- /top -->
 
-        <div class="scroll__container">
-            <!-- top -->
-            <section id="top" class="scroll__child">
-                <div class="top">
-                    <h1 id="title">Mitsuishi Kenta</h1>
-                    <p id="sub_title">- Portfolio -</p>
-                </div>
-            </section>
-            <!-- /top -->
+      <!-- about -->
+      <section id="about" class="scroll__child">
+        <div class="about">
+          <h2>About</h2>
+          <div class="about__flex wrapper">
+            <div class="about__left">
+              <img src="./img/profile.png" alt="Mitsuishi Kenta" />
+              <p>三ッ石 健太</p>
+              <p>Mitsuishi Kenta</p>
+            </div>
+            <div class="about__right">
+              <p>1993年 10月 30日 生まれ</p>
+              <p>愛知県 尾張旭市 出身</p>
+              <p>東京都 中野区在住</p>
+              <p>高校卒業後、二年浪人し東京理科大学工学部建築学科に進学</p>
+              <p>大学では建築史と建築意匠論について学ぶ</p>
+              <p>大学卒業後、デザイン系不動産に入社</p>
+              <p>
+                業務内容のギャップや、かねてからプログラミング、グラフィックデザインに興味があったのでWebデザイン業界を志す
+              </p>
+              <p>現在、就職支援訓練にて勉強中</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
 
-            <!-- about -->
-            <section id="about" class="scroll__child">
-                <div class="about">
-                    <h2>About</h2>
-                    <div class="about__flex wrapper">
-                        <div class="about__left">
-                            <img src="./img/profile.png" alt="Mitsuishi Kenta">
-                            <p>三ッ石 健太</p>
-                            <p>Mitsuishi Kenta</p>
-                        </div>
-                        <div class="about__right">
-                            <p>1993年 10月 30日 生まれ</p>
-                            <p>愛知県 尾張旭市 出身</p>
-                            <p>東京都 中野区在住</p>
-                            <p>高校卒業後、二年浪人し東京理科大学工学部建築学科に進学</p>
-                            <p>大学では建築史と建築意匠論について学ぶ</p>
-                            <p>大学卒業後、デザイン系不動産に入社</p>
-                            <p>業務内容のギャップや、かねてからプログラミング、グラフィックデザインに興味があったのでWebデザイン業界を志す</p>
-                            <p>現在、就職支援訓練にて勉強中</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /about -->
-
-            <!-- works -->
-            <section id="works" class="scroll__child">
-                <div class="works wrapper">
-                    <h2>Works</h2>
-                    <div class="works__flex">
-                        <div class="works__left">
-
-                            <!-- template -->
-                            <!-- <article class="works__contents">
+      <!-- works -->
+      <section id="works" class="scroll__child">
+        <div class="works wrapper">
+          <h2>Works</h2>
+          <div class="works__flex">
+            <div class="works__left">
+              <!-- template -->
+              <!-- <article class="works__contents">
                                 <ul>
                                     <li>
                                         <h3>COM</h3><a href="http://salon.mtken10.com/">http://salon.mtken10.com/</a>
@@ -96,299 +96,336 @@
                                 <img src="./img/COM.png" alt="">
                                 <a href="./img/COM.png" rel="lightbox"><img src="./img/COM.png" alt=""></a>
                             </article> -->
-                            <!-- template -->
+              <!-- template -->
 
-                            <!-- ↓ add here -->
+              <!-- ↓ add here -->
 
-                            <!-- HENRIK -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3><span>RelaxationSalon</span> HENRIK</h3>
-                                        <a href="http://salon-henlik.mtken10.com/">
-                                            http://salon-henlik.mtken10.com
-                                        </a>
-                                    </li>
-                                    <li>Website</li>
-                                    <li>Tool</li>
-                                    <li>Photoshop, adobe XD, HTML5, CSS3, Sass(Scss)</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        架空のマッサージサロンのサイトをデザイン、コーディングしました。<br>
-                                        スウェーデンマッサージの店舗ということで、配色はスウェーデンの国旗を意識し、黄と青の二色を用いました。<br>
-                                        シンプルで落ち着きをもたせることでみやすさを意識しました。
-                                    </li>
-                                </ul>
-                                <img src="./img/henrik.png" alt="">
-                                <a href="./img/henrik.png" rel="lightbox">
-                                    <img src="./img/henrik.png" alt="">
-                                </a>
-                            </article>
-                            <!-- HENRIK -->
-
-                            <!-- COM -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3>COM</h3>
-                                        <a href="http://salon.mtken10.com/">
-                                            http://salon.mtken10.com
-                                        </a>
-                                    </li>
-                                    <li>Website</li>
-                                    <li>Tool</li>
-                                    <li>Photoshop, adobe XD, HTMLl5,　CSS3, Sass(Scss), JavaScript ( jQuery )</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        架空の美容院のサイトをデザイン、コーディングしました。<br>
-                                        落ち着いた雰囲気を目指すためフラットデザインを採用し、配色も二色に絞った上で落ち着いた色使いを意識しました。<br>
-                                        画面右側にヘッダーを固定し、メインページのみをスクロールさせています。<br>
-                                    </li>
-                                </ul>
-                                <img src="./img/COM.png" alt="">
-                                <a href="./img/COM.png" rel="lightbox">
-                                    <img src="./img/COM.png" alt="">
-                                </a>
-                            </article>
-                            <!-- COM -->
-
-                            <!-- banner origin -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3>Headphone</h3>
-                                    </li>
-                                    <li>Banner</li>
-                                    <li>Tool</li>
-                                    <li>Photoshop</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        既存ヘッドフォンの新色追加に関するPRのための架空のバナーを作成しました。<br>
-                                        女性向けの新色ということでガーリな雰囲気を意識しました。
-                                    </li>
-                                </ul>
-                                <div class="works__many">
-                                    <img src="./img/origin-banner_1.gif" alt="" class="origin">
-                                    <a href="./img/origin-banner_1.gif" rel="lightbox">
-                                        <img src="./img/origin-banner_1.gif" alt="">
-                                    </a>
-                                    <img src="./img/origin-banner_2.png" alt="" class="origin">
-                                    <a href="./img/origin-banner_2.png" rel="lightbox">
-                                        <img src="./img/origin-banner_2.png" alt="">
-                                    </a>
-                                    <img src="./img/origin-banner_3.png" alt="" class="origin">
-                                    <a href="./img/origin-banner_3.png" rel="lightbox">
-                                        <img src="./img/origin-banner_3.png" alt="">
-                                    </a>
-                                </div>
-                            </article>
-                            <!-- banner origin -->
-
-                            <!-- banner toeic -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3>TOEIC</h3>
-                                    </li>
-                                    <li>Banner</li>
-                                    <li>Tool</li>
-                                    <li>Photoshop, Illustrator</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        架空の社会人向け英語塾のバナー制作を行いました。<br>
-                                        短期間で成績アップやどこでも受講できるという情報をもとにデザインを行いました。
-                                    </li>
-                                </ul>
-                                <div class="works__many">
-                                    <img src="./img/english-banner_1.png" alt="" class="english">
-                                    <a href="./img/english-banner_1.png" rel="lightbox">
-                                        <img src="./img/english-banner_1.png" alt="">
-                                    </a>
-                                    <img src="./img/english-banner_2.png" alt="" class="english">
-                                    <a href="./img/english-banner_2.png" rel="lightbox">
-                                        <img src="./img/english-banner_2.png" alt="">
-                                    </a>
-                                    <img src="./img/english-banner_3.gif" alt="" class="english">
-                                    <a href="./img/english-banner_3.gif" rel="lightbox">
-                                        <img src="./img/english-banner_3.gif" alt="">
-                                    </a>
-                                </div>
-                            </article>
-                            <!-- banner toeic -->
-
-                            <!-- hot　spring -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3>桑水流旅館</h3>
-                                        <a href="http://hotspring.mtken10.com/">
-                                            http://hotspring.mtken10.com
-                                        </a>
-                                    </li>
-                                    <li>Website</li>
-                                    <li>Tool</li>
-                                    <li>Photoshop, adobe XD, HTML5, CSS3, Sass(Scss), JavaScript ( jQuery )</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        架空の温泉旅館のサイトをデザイン、コーディングしました。<br>
-                                        和風かつ高級感を出すため配色は和食を使い、全体的にトーンを落としてデザインしました。<br>
-                                        トップビューが固定されその上をページがスクロールするようになっています。
-                                    </li>
-                                </ul>
-                                <img src="./img/hotspring.png" alt="">
-                                <a href="./img/hotspring.png" rel="lightbox">
-                                    <img src="./img/hotspring.png" alt="">
-                                </a>
-                            </article>
-                            <!-- hot spring -->
-
-                            <!-- Business card -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3>My Business card</h3>
-                                    </li>
-                                    <li>Business card</li>
-                                    <li>Tool</li>
-                                    <li>Illustrator</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        自分の名刺を作りました。<br>
-                                        ロゴ制作から行い、線の数が自分の名前を表しています。<br>
-                                        またロゴの背景色の色名の頭文字を取るとMTIS(三ツ石)となります。
-                                    </li>
-                                </ul>
-                                <div class="works__many">
-                                    <img src="./img/businescard_1.png" alt="" class="businessCard">
-                                    <a href="./img/businescard_1.png" rel="lightbox">
-                                        <img src="./img/businescard_1.png" alt="">
-                                    </a>
-                                    <img src="./img/businescard_2.png" alt="" class="businessCard">
-                                    <a href="./img/businescard_2.png" rel="lightbox">
-                                        <img src="./img/businescard_2.png" alt="">
-                                    </a>
-                                </div>
-                            </article>
-                            <!-- Business card -->
-
-                            <!-- hot　spring -->
-                            <article class="works__contents">
-                                <ul>
-                                    <li>
-                                        <h3>Az works</h3>
-                                        <a href="http://corporate-wroker.mtken10.com/">
-                                            http://corporate-wroker.mtken10.com/
-                                        </a>
-                                    </li>
-                                    <li>Website</li>
-                                    <li>Tool</li>
-                                    <li>Photoshop, adobe XD, HTML5, CSS3, Sass(Scss), JavaScript ( jQuery )</li>
-                                    <li>Concept</li>
-                                    <li>
-                                        架空の転職会社のサイトをデザイン、コーディングしました。<br>
-                                        誠実な雰囲気を出すため全体的に白と青を使った配色を意識しました。
-                                    </li>
-                                </ul>
-                                <img src="./img/works.png" alt="">
-                                <a href="./img/works.png" rel="lightbox">
-                                    <img src="./img/works.png" alt="">
-                                </a>
-                            </article>
-                            <!-- hot spring -->
-
-                            <div id="more_btn">read more</div>
-                            <div id="close_btn">close</div>
-                        </div>
-                        <div class="works__right"></div>
-                    </div>
-                </div>
-            </section>
-            <!-- /works -->
-
-            <!-- skill -->
-            <section id="skill" class="scroll__child">
-                <div class="skill">
-                    <h2>Skill</h2>
-                    <div class="skill__flex wrapper">
-                        <div>
-                            <i class="fas fa-pen-nib"></i>
-                            <p>design</p>
-                            <p>
-                                大学では建築意匠の研究や設計を行っていました。<br>
-                                設計の課題の中で自分の作った建築物をポスターに落とし込むなどのグラフィクデザインも行っていました。<br>
-                                いかに与えられたものをより良く見せれるかということに魅力を感じています。<br><br>
-                                使用ソフト<br>
-                                <span>
-                                    adobe Photoshop<br>
-                                    adobe Illustrator<br>
-                                    adobe xd
-                                </span>
-                        </div>
-                        <div>
-                            <i class="fas fa-code"></i>
-                            <p>coding</p>
-                            <p>
-                                大学在学中に趣味でプログラミングを学んでいました。<br>
-                                Webデザインを志すようになり、HTML5, CSS3, JavaScript, jQuery, SASS などの言語を学習してきました。<br>
-                                あたえられたデザインを狂いなく整えていくのが好きです。<br><br>
-                                使用エディタ<br>
-                                <span>Visual Studio Code</span><br><br>
-                                言語<br>
-                                <span>
-                                    html5, css3, SASS<br>
-                                    JavaScript, jQuery<br>
-                                    C<br>
-                                    swift
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /skill -->
-
-            <!-- contact -->
-            <section id="contact" class="scroll__child">
-                <div class="contact wrapper">
-                    <h2>Contact</h2>
-                    <p class="contact__text">お問い合わせは下記メールアドレス<br>
-                        またはSNSからお願いいたします</p>
-                    <a href="mailto:air1030key@gmail.com">
-                        <p class="contact__adores">air1030key@gmail.com</p>
+              <!-- HENRIK -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3><span>RelaxationSalon</span> HENRIK</h3>
+                    <a href="http://salon-henlik.mtken10.com/">
+                      http://salon-henlik.mtken10.com
                     </a>
-                    <div class="contact__flex">
+                  </li>
+                  <li>Website</li>
+                  <li>Tool</li>
+                  <li>Photoshop, adobe XD, HTML5, CSS3, Sass(Scss)</li>
+                  <li>Concept</li>
+                  <li>
+                    架空のマッサージサロンのサイトをデザイン、コーディングしました。<br />
+                    スウェーデンマッサージの店舗ということで、配色はスウェーデンの国旗を意識し、黄と青の二色を用いました。<br />
+                    シンプルで落ち着きをもたせることでみやすさを意識しました。
+                  </li>
+                </ul>
+                <img src="./img/henrik.png" alt="" />
+                <a href="./img/henrik.png" rel="lightbox">
+                  <img src="./img/henrik.png" alt="" />
+                </a>
+              </article>
+              <!-- HENRIK -->
 
-                        <a href="https://twitter.com/kentacss">
-                            <i class="fab fa-twitter"></i>
-                            <p class="contact__title">Twitter</p>
-                            <p class="contact__id">@kentacss</p>
-                        </a>
+              <!-- COM -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>COM</h3>
+                    <a href="http://salon.mtken10.com/">
+                      http://salon.mtken10.com
+                    </a>
+                  </li>
+                  <li>Website</li>
+                  <li>Tool</li>
+                  <li>
+                    Photoshop, adobe XD, HTMLl5,　CSS3, Sass(Scss), JavaScript
+                    ( jQuery )
+                  </li>
+                  <li>Concept</li>
+                  <li>
+                    架空の美容院のサイトをデザイン、コーディングしました。<br />
+                    落ち着いた雰囲気を目指すためフラットデザインを採用し、配色も二色に絞った上で落ち着いた色使いを意識しました。<br />
+                    画面右側にヘッダーを固定し、メインページのみをスクロールさせています。<br />
+                  </li>
+                </ul>
+                <img src="./img/COM.png" alt="" />
+                <a href="./img/COM.png" rel="lightbox">
+                  <img src="./img/COM.png" alt="" />
+                </a>
+              </article>
+              <!-- COM -->
 
-                        <a href="https://www.facebook.com/profile.php?id=100003786886611&ref=bookmarks">
-                            <i class="fab fa-facebook"></i>
-                            <p class="contact__title">Facebook</p>
-                            <p class="contact__id">Mitsuishi Kenta</p>
-                        </a>
-
-                        <a href="https://github.com/AIRKEY1030">
-                            <i class="fab fa-github"></i>
-                            <p class="contact__title">GitHub</p>
-                            <p class="contact__id">AIRKEY1030</p>
-                        </a>
-
-                    </div>
+              <!-- banner origin -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>Headphone</h3>
+                  </li>
+                  <li>Banner</li>
+                  <li>Tool</li>
+                  <li>Photoshop</li>
+                  <li>Concept</li>
+                  <li>
+                    既存ヘッドフォンの新色追加に関するPRのための架空のバナーを作成しました。<br />
+                    女性向けの新色ということでガーリな雰囲気を意識しました。
+                  </li>
+                </ul>
+                <div class="works__many">
+                  <img src="./img/origin-banner_1.gif" alt="" class="origin" />
+                  <a href="./img/origin-banner_1.gif" rel="lightbox">
+                    <img src="./img/origin-banner_1.gif" alt="" />
+                  </a>
+                  <img src="./img/origin-banner_2.png" alt="" class="origin" />
+                  <a href="./img/origin-banner_2.png" rel="lightbox">
+                    <img src="./img/origin-banner_2.png" alt="" />
+                  </a>
+                  <img src="./img/origin-banner_3.png" alt="" class="origin" />
+                  <a href="./img/origin-banner_3.png" rel="lightbox">
+                    <img src="./img/origin-banner_3.png" alt="" />
+                  </a>
                 </div>
-            </section>
-            <div class="footer">
-                <div class="wrapper">
-                    <p>© 2019 Kenta Mitsuishi All rights Reserved.</p>
+              </article>
+              <!-- banner origin -->
+
+              <!-- banner toeic -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>TOEIC</h3>
+                  </li>
+                  <li>Banner</li>
+                  <li>Tool</li>
+                  <li>Photoshop, Illustrator</li>
+                  <li>Concept</li>
+                  <li>
+                    架空の社会人向け英語塾のバナー制作を行いました。<br />
+                    短期間で成績アップやどこでも受講できるという情報をもとにデザインを行いました。
+                  </li>
+                </ul>
+                <div class="works__many">
+                  <img src="./img/english-banner_1.png" alt="" class="english" />
+                  <a href="./img/english-banner_1.png" rel="lightbox">
+                    <img src="./img/english-banner_1.png" alt="" />
+                  </a>
+                  <img src="./img/english-banner_2.png" alt="" class="english" />
+                  <a href="./img/english-banner_2.png" rel="lightbox">
+                    <img src="./img/english-banner_2.png" alt="" />
+                  </a>
+                  <img src="./img/english-banner_3.gif" alt="" class="english" />
+                  <a href="./img/english-banner_3.gif" rel="lightbox">
+                    <img src="./img/english-banner_3.gif" alt="" />
+                  </a>
                 </div>
+              </article>
+              <!-- banner toeic -->
+
+              <!-- hot　spring -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>桑水流旅館</h3>
+                    <a href="http://hotspring.mtken10.com/">
+                      http://hotspring.mtken10.com
+                    </a>
+                  </li>
+                  <li>Website</li>
+                  <li>Tool</li>
+                  <li>
+                    Photoshop, adobe XD, HTML5, CSS3, Sass(Scss), JavaScript (
+                    jQuery )
+                  </li>
+                  <li>Concept</li>
+                  <li>
+                    架空の温泉旅館のサイトをデザイン、コーディングしました。<br />
+                    和風かつ高級感を出すため配色は和食を使い、全体的にトーンを落としてデザインしました。<br />
+                    トップビューが固定されその上をページがスクロールするようになっています。
+                  </li>
+                </ul>
+                <img src="./img/hotspring.png" alt="" />
+                <a href="./img/hotspring.png" rel="lightbox">
+                  <img src="./img/hotspring.png" alt="" />
+                </a>
+              </article>
+              <!-- hot spring -->
+
+              <!-- Business card -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>My Business card</h3>
+                  </li>
+                  <li>Business card</li>
+                  <li>Tool</li>
+                  <li>Illustrator</li>
+                  <li>Concept</li>
+                  <li>
+                    自分の名刺を作りました。<br />
+                    ロゴ制作から行い、線の数が自分の名前を表しています。<br />
+                    またロゴの背景色の色名の頭文字を取るとMTIS(三ツ石)となります。
+                  </li>
+                </ul>
+                <div class="works__many">
+                  <img src="./img/businescard_1.png" alt="" class="businessCard" />
+                  <a href="./img/businescard_1.png" rel="lightbox">
+                    <img src="./img/businescard_1.png" alt="" />
+                  </a>
+                  <img src="./img/businescard_2.png" alt="" class="businessCard" />
+                  <a href="./img/businescard_2.png" rel="lightbox">
+                    <img src="./img/businescard_2.png" alt="" />
+                  </a>
+                </div>
+              </article>
+              <!-- Business card -->
+
+              <!-- hot　spring -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>Az works</h3>
+                    <a href="http://corporate-wroker.mtken10.com/">
+                      http://corporate-wroker.mtken10.com/
+                    </a>
+                  </li>
+                  <li>Website</li>
+                  <li>Tool</li>
+                  <li>
+                    Photoshop, adobe XD, HTML5, CSS3, Sass(Scss), JavaScript (
+                    jQuery )
+                  </li>
+                  <li>Concept</li>
+                  <li>
+                    架空の転職会社のサイトをデザイン、コーディングしました。<br />
+                    誠実な雰囲気を出すため全体的に白と青を使った配色を意識しました。
+                  </li>
+                </ul>
+                <img src="./img/works.png" alt="" />
+                <a href="./img/works.png" rel="lightbox">
+                  <img src="./img/works.png" alt="" />
+                </a>
+              </article>
+              <!-- hot spring -->
+
+              <!-- hot　spring -->
+              <article class="works__contents">
+                <ul>
+                  <li>
+                    <h3>Architecture Portfolio</h3>
+                    <a href="./img/portfolio.pdf">
+                      read pdf
+                    </a>
+                  </li>
+                  <li>Portfolio</li>
+                  <li>Tool</li>
+                  <li>
+                    Photoshop, Illustrator, InDesign
+                  </li>
+                  <li>Concept</li>
+                  <li>
+                    建築学科学生時代のポートフォリオです。<br>
+                    四角を意識した建築を多く設計していたので、ポートフォリオも全体的に四角を意識した構成になっています。
+                  </li>
+                </ul>
+                <img src="./img/portfolio.png" alt="" />
+                <a href="./img/portfolio.png" rel="lightbox">
+                  <img src="./img/portfolio.png" alt="" />
+                </a>
+              </article>
+              <!-- hot spring -->
+              <div id="more_btn">read more</div>
+              <div id="close_btn">close</div>
             </div>
-            <!-- /contact -->
+            <div class="works__right"></div>
+          </div>
         </div>
+      </section>
+      <!-- /works -->
 
-    </main>
-    <!-- /main -->
+      <!-- skill -->
+      <section id="skill" class="scroll__child">
+        <div class="skill">
+          <h2>Skill</h2>
+          <div class="skill__flex wrapper">
+            <div>
+              <i class="fas fa-pen-nib"></i>
+              <p>design</p>
+              <p>
+                大学では建築意匠の研究や設計を行っていました。<br />
+                設計の課題の中で自分の作った建築物をポスターに落とし込むなどのグラフィクデザインも行っていました。<br />
+                いかに与えられたものをより良く見せれるかということに魅力を感じています。<br /><br />
+                使用ソフト<br />
+                <span>
+                  adobe Photoshop<br />
+                  adobe Illustrator<br />
+                  adobe xd
+                </span>
+              </p>
+            </div>
+
+            <div>
+              <i class="fas fa-code"></i>
+              <p>coding</p>
+              <p>
+                大学在学中に趣味でプログラミングを学んでいました。<br />
+                Webデザインを志すようになり、HTML5, CSS3, JavaScript, jQuery,
+                SASS などの言語を学習してきました。<br />
+                あたえられたデザインを狂いなく整えていくのが好きです。<br /><br />
+                使用エディタ<br />
+                <span>Visual Studio Code</span><br /><br />
+                言語<br />
+                <span>
+                  html5, css3, SASS<br />
+                  JavaScript, jQuery<br />
+                  C<br />
+                  swift
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- contact -->
+      <section id="contact" class="scroll__child">
+        <div class="contact wrapper">
+          <h2>Contact</h2>
+          <p class="contact__text">
+            お問い合わせは下記メールアドレス<br />
+            またはSNSからお願いいたします
+          </p>
+          <a href="mailto:air1030key@gmail.com">
+            <p class="contact__adores">air1030key@gmail.com</p>
+          </a>
+          <div class="contact__flex">
+            <a href="https://twitter.com/kentacss">
+              <i class="fab fa-twitter"></i>
+              <p class="contact__title">Twitter</p>
+              <p class="contact__id">@kentacss</p>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100003786886611&ref=bookmarks">
+              <i class="fab fa-facebook"></i>
+              <p class="contact__title">Facebook</p>
+              <p class="contact__id">Mitsuishi Kenta</p>
+            </a>
+
+            <a href="https://github.com/AIRKEY1030">
+              <i class="fab fa-github"></i>
+              <p class="contact__title">GitHub</p>
+              <p class="contact__id">AIRKEY1030</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <div class="wrapper">
+          <p>© 2019 Kenta Mitsuishi All rights Reserved.</p>
+        </div>
+      </div>
+      <!-- /contact -->
+    </div>
+  </main>
+  <!-- /main -->
 </body>
 
 </html>
